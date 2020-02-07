@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="2166dp"
+        android:layout_height="465dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:src="@drawable/play" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="265dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="false"
+            android:layout_toLeftOf="@+id/ok_sounds"
+            android:layout_toStartOf="@+id/ok_sounds"
+            android:id="@+id/linearLayout">
+
+            <RadioGroup
+                android:id="@+id/radioGroup_1"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <RadioButton
+                    android:id="@+id/radioVersion0_1"
+                    android:layout_width="518dp"
+                    android:layout_height="wrap_content"
+                    android:text="New RadioButton"
+                    android:textSize="30sp"
+                    android:layout_margin="5dp" />
+
+                <RadioButton
+                    android:id="@+id/radioVersion1_1"
+                    android:layout_width="518dp"
+                    android:layout_height="wrap_content"
+                    android:text="New RadioButton"
+                    android:textSize="30sp"
+                    android:layout_margin="5dp" />
+
+                <RadioButton
+                    android:id="@+id/radioVersion2_1"
+                    android:layout_width="518dp"
+                    android:layout_height="wrap_content"
+                    android:text="New RadioButton"
+                    android:textSize="30sp"
+                    android:layout_margin="5dp" />
+
+                <RadioButton
+                    android:id="@+id/radioVersion3_1"
+                    android:layout_width="518dp"
+                    android:layout_height="wrap_content"
+                    android:text="New RadioButton"
+                    android:textSize="30sp"
+                    android:layout_margin="5dp" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ok_sounds"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/button_background"
+            android:text="@android:string/ok"
+            android:textColor="@color/text_color"
+            android:textSize="36sp"
+            android:layout_marginRight="31dp"
+            android:layout_marginEnd="31dp"
+            android:layout_alignBottom="@+id/linearLayout"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/mistakes_1"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="0.50"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/score"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/score_1"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="0.50"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:text="@string/score"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="1637dp"
+        android:layout_height="368dp"
+        android:id="@+id/noteImage0"
+        android:layout_gravity="center_horizontal|top"
+        android:src="@drawable/lesson0_0" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="242dp">
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/ok_sounds"
+            android:layout_toStartOf="@+id/ok_sounds"
+            android:id="@+id/linearLayout">
+
+            <RadioGroup
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:id="@+id/radioGroup_0">
+
+                <RadioButton
+                    android:layout_width="555dp"
+                    android:layout_height="wrap_content"
+                    android:text="New RadioButton"
+                    android:id="@+id/radioVersion0_0"
+                    android:layout_margin="5dp"
+                    android:textSize="30sp" />
+
+                <RadioButton
+                    android:layout_width="555dp"
+                    android:layout_height="wrap_content"
+                    android:text="New RadioButton"
+                    android:id="@+id/radioVersion1_0"
+                    android:textSize="30sp"
+                    android:layout_margin="5dp" />
+
+                <RadioButton
+                    android:layout_width="555dp"
+                    android:layout_height="wrap_content"
+                    android:text="New RadioButton"
+                    android:id="@+id/radioVersion2_0"
+                    android:textSize="30sp"
+                    android:layout_margin="5dp" />
+
+                <RadioButton
+                    android:layout_width="555dp"
+                    android:layout_height="wrap_content"
+                    android:text="New RadioButton"
+                    android:id="@+id/radioVersion3_0"
+                    android:textSize="30sp"
+                    android:layout_margin="5dp" />
+            </RadioGroup>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/ok_sounds"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/button_background"
+            android:text="@android:string/ok"
+            android:textColor="@color/text_color"
+            android:textSize="36sp"
+            android:layout_marginRight="49dp"
+            android:layout_marginEnd="49dp"
+            android:layout_alignBottom="@+id/linearLayout"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/score"
+            android:id="@+id/mistakes_0"
+            android:paddingRight="10dp"
+            android:layout_weight="0.50"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/score"
+            android:id="@+id/score_0"
+            android:paddingRight="10dp"
+            android:gravity="right"
+            android:layout_weight="0.50"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

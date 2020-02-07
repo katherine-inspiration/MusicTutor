@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:id="@+id/noteImage0"
+        android:layout_gravity="center_horizontal|top"
+        android:src="@drawable/lesson0_0" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:id="@+id/radioGroup_0">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New RadioButton"
+                android:id="@+id/radioVersion0_0" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New RadioButton"
+                android:id="@+id/radioVersion1_0" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New RadioButton"
+                android:id="@+id/radioVersion2_0" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New RadioButton"
+                android:id="@+id/radioVersion3_0" />
+        </RadioGroup>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="@android:string/ok"
+            android:id="@+id/ok_0"
+            android:layout_gravity="bottom"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/text_color"
+            android:layout_marginRight="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/score"
+            android:id="@+id/mistakes_0"
+            android:paddingRight="10dp"
+            android:layout_weight="0.50"
+            android:gravity="left"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/score"
+            android:id="@+id/score_0"
+            android:paddingRight="10dp"
+            android:gravity="right"
+            android:layout_weight="0.50" />
+
+    </LinearLayout>
+
+</LinearLayout>

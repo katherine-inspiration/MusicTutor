@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.uzer.musictutor">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".LessonsActivity"
+            android:label="@string/lessons"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"></meta-data>
+
+        </activity>
+
+        <activity android:name=".TheoryLessonActivity"
+            android:label="@string/lesson0_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".LessonsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LessonsActivity"></meta-data>
+
+        </activity>
+        <activity android:name=".ExersicesActivity"
+            android:label="@string/exersices"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity">
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity"></meta-data>
+        </activity>
+
+
+        <activity android:name=".DoExerciseActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".YouAreAmazingActivity"
+            android:label="@string/congrate"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".ExersicesActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ExersicesActivity"></meta-data>
+        </activity>
+        <activity android:name=".YouAreLooserActivity"
+            android:label="@string/ouch"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".ExersicesActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ExersicesActivity"></meta-data>
+        </activity>
+
+
+    </application>
+
+
+</manifest>
